@@ -253,21 +253,63 @@ video {
 @media only screen and (min-width: 320px) {
   
   #page1image {
-    width: 10%; 
+    width: 20%; 
     max-width: none; 
     margin-top: 100px; 
   }
-  
+
+  nav ul li {
+    float:none;
+    width: 100%;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:auto;
+    width: 100%;
+    height: 13%;
+  }
+
  nav ul li a {
-   padding: 15px 25px;
+    padding: 4px 0px;
+   font-size: large;
+   text-align: center;
+   font-size: medium;
    }
 
-  h1, h2, h3, h4 {
+  h1, h2, h4 {
     font-size: 27px;
   } 
+
 body {
    font-size: 15px;
   }
+  #hidden_text {
+    text-align: center;
+    text-decoration-line: none;
+    padding: 1%;
+  }
+  .resume_tables {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border: 2px solid #2e2e2e;
+  }
+  .resume_tables section {
+    margin: auto;
+  }
+
+  
+  form {
+    max-width: 80%;
+  }
+  h3 {
+    font-size: 12px;
+    padding: 1%;
+  }
+
  
 }
 
