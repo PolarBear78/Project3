@@ -2,7 +2,7 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  float: left;
+  display: flex;
   overflow: hidden;
   width: 100%;
   height: auto;
@@ -11,9 +11,10 @@ nav ul {
 }
 
 nav ul li {
-  float: left;
-  width: 33%;
+ 
+  width: 25%;
 }
+
 
 nav ul li a {
   text-decoration: none;
