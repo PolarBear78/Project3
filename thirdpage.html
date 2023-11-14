@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Thank you for submitting</title>
   <link rel="icon" href="media/check.png">
+  <script async src="js/script.js"></script>
 </head>
 
 <body>
@@ -23,14 +24,20 @@
     <img id="jou_img" src="media/jou.gif" alt="Jokes on you gif meme">
     
     <h2>Enjoy this gallery of hypnotic videos to forget about the time you just wasted filling out my survey.</h2>
-    <video controls autoplay muted>
-      <source src="media/video1.mp4" type="video/mp4">
-    </video>
-    <h3>These are called Mandlebrot Fractals.</h3>
-    <video controls autoplay muted>
-      <source src="media/video2.mp4" type="video/mp4">
-    </video>
-    <h3>They're super cool Maths equations!</h3>
+    <div class="slider-container">
+      <div class="slider">
+        <video controls autoplay muted>
+          <source src="media/video1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <video controls autoplay muted>
+          <source src="media/video2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video> 
+      </div>
+      <button class="prev" onclick="prevSlide()">←</button>
+      <button class="next" onclick="nextSlide()">→</button>
+    </div>
   </div>
 
 
