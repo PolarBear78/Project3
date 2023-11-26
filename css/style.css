@@ -284,6 +284,23 @@ button:hover {
   background-color: #27ae60;
 }
 
+.MapBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  margin-left: 10% ;
+  padding: 0;
+}
+
+#map {
+  border: 5px solid #2ecc71;
+  border-radius: 10%;
+  display: block;
+  margin: 0 auto;
+}
+
 @media only screen and (min-width: 320px) {
   
   #page1image {

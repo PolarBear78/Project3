@@ -6,36 +6,40 @@
     
     <head>
         <title>Google Maps API Example</title>
+        <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
-     <link rel="stylesheet" href="css/style.css">
-        <script src="https://maps.googleapis.com/maps/api/js?AIzaSyD-yprLxEtpm4pgnfS6CK_XMmcZLBRSrjA"></script>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://maps.googleapis.com/maps/api/js?AIzaSyD-yprLxEtpm4pgnfS6CK_XMmcZLBRSrjA=initMap"></script>
         <script>
             function initMap() {
                 var myLatLng = {lat: 41.8349, lng: -87.6270};
 
                 var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 4,
+                    zoom: 15,
                     center: myLatLng
                 });
 
                 var marker = new google.maps.Marker({
                     position: myLatLng,
                     map: map,
-                    title: 'Hello World!'
+                    title: 'Illinois Institute of Technology'
                 });
             }
         </script>
     </head>
-    <nav>
-        <ul>
-          <li><a href="index.html"><strong>Resume</strong></a></li>
-          <li><a href="secondpage.html"><strong>Survey</strong></a></li>
-          <li><a href="thirdpage.html"><strong>Mandlebrot</strong></a></li>
-          <li><a href="fourthpage.html"><strong>Google Maps</strong></a></li>
-        </ul>
-    
-      </nav>
+   
     <body onload="initMap()">
-        <div id="map" style="height: 500px; width: 100%;"></div>
+        <nav>
+            <ul>
+              <li><a href="index.html"><strong>Resume</strong></a></li>
+              <li><a href="secondpage.html"><strong>Survey</strong></a></li>
+              <li><a href="thirdpage.html"><strong>Mandlebrot</strong></a></li>
+              <li><a href="fourthpage.html"><strong>Google Maps</strong></a></li>
+            </ul>
+        </nav>
+        <div class="MapBody" >
+            <h1 class="rainbow_text">Illinois Institute of Technology</h1>
+            <div id="map" style="height: 500px; width: 50%;"></div>
+        </div>
     </body>
 </html>
